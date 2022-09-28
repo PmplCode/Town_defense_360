@@ -10,15 +10,16 @@
 
 .fixed {
     position: absolute;
-    width: 50%;
-    margin-left: 38%;
-    margin-top: 17%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 15%;
     align-items: center;
+    border-radius: 20px;
 }
 
 .fixed1 {
-    width: 50%;
-    background-color: rgb(160, 157, 157);
+    width: 100%;
+    background-color: #cae9ea;
     text-align: center;
 }
 
@@ -37,8 +38,8 @@ p {
 }
 
 button {
-
-    background-color: rgb(82, 185, 185);
+    font-size: 25px;
+    background-color: #255f63;
     width: 60%;
     padding: 10px 5px;
     border-radius: 50px;
