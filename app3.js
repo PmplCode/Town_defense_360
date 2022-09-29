@@ -1,7 +1,10 @@
 const sprite = new Image();
 sprite.src = 'img/imagenes.png'
 const backmusic = new Audio('img/focus-loop-corporate-music-114297.mp3');
-backmusic.volume = 0.2
+const tower = new Image();
+tower.src = 'img/Untitled_Artwork.png'
+backmusic.volume = 0.5
+backmusic.loop = true;
 
 
 // function game(){
@@ -30,15 +33,15 @@ backmusic.volume = 0.2
         
         draw() {
             c.drawImage(
-                sprite,
-                1183,
-                38,
-                this.width,
-                this.height,
+                tower,
+                500,
+                0,
+                1500,
+                2000,
                 this.x,
                 this.y,
-                75,
-                50
+                100,
+                100
             );
             
         }
@@ -148,7 +151,7 @@ backmusic.volume = 0.2
     
     function init() { //PRINTEGEM LA ALDEA I EL JUGADOR
         player = new Player(x, y, 60, "blue");
-        playerRot = new PlayerRot(x-30, y-25, 444, 254, 0)
+        playerRot = new PlayerRot(x-25, y-25, 50, 254, 50)
         projectiles = []; //INICIEM ELS ARRAYS A 0
         enemies = []; //INICIEM ELS ARRAYS A 0
         score = 0; //SCORE A 0
